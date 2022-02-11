@@ -3,11 +3,11 @@ import java.lang.reflect.Method;
 
 public class ActionUtils {
 
-    Actions actions = new Actions();
     static Method[] methods;
+    Actions actions = new Actions();
 
     ActionUtils() {
-        methods=actions.getClass().getMethods();
+        methods = actions.getClass().getMethods();
     }
 
     public void actionInvoker() throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
@@ -18,7 +18,4 @@ public class ActionUtils {
             }
         }
     }
-
-
-
 }

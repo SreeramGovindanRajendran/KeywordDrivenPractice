@@ -1,12 +1,10 @@
-import java.io.IOException;
-import java.lang.reflect.InvocationTargetException;
+import org.testng.annotations.Test;
 
 public class TestRunner {
 
-    public void runner() throws IOException, InvocationTargetException, NoSuchMethodException, IllegalAccessException {
+    @Test
+    public void runner() throws Exception {
         ExcelUtils excelUtils = new ExcelUtils();
-
-
         excelUtils.getCellValues();
     }
 }
